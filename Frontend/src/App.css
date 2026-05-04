@@ -1,0 +1,4 @@
+/* App.css cleared to prevent style leakage */
+.App {
+  min-height: 100vh;
+}

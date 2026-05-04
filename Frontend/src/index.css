@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #81085c;
+  --primary-hover: #9d0a70;
+  --secondary: #e849a1;
+  --accent: #81085c;
+  --bg-light: #FFFDFB;
+  --bg-subtle: #fbe6f2;
+  --text-main: #1A1A1A;
+  --text-muted: #555555;
+  --nav-bg: rgba(255, 253, 247, 0.98);
+  --glass-border: #DDDDDD;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --font-main: 'DM Sans', sans-serif;
+  --font-heading: 'Sora', sans-serif;
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-theme='dark'] {
+  --primary: #81085c;
+  --primary-hover: #9d0a70;
+  --secondary: #2a031e;
+  --accent: #e849a1;
+  --bg-light: #0A0A0A;
+  --bg-subtle: #121212;
+  --text-main: #FDFDFD;
+  --text-muted: #888888;
+  --nav-bg: rgba(10, 10, 10, 0.95);
+  --glass-border: #222222;
+  --shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  transition: var(--transition);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Utility Classes */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.overflow-hidden { overflow: hidden; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.top-0 { top: 0; }
+.left-0 { left: 0; }
+.pointer-events-none { pointer-events: none; }
+.w-fit { width: fit-content; }
+.flex-shrink-0 { flex-shrink: 0; }
+.whitespace-nowrap { white-space: nowrap; }
+.uppercase { text-transform: uppercase; }
+.font-semibold { font-weight: 600; }
+.font-normal { font-weight: 400; }
+.flex-1 { flex: 1; }
+.translate-y-\[101\%\] { transform: translateY(101%); }

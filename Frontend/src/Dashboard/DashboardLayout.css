@@ -126,12 +126,20 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: var(--bg-subtle);
+  background-color: #C27E79;
   padding: 10px 16px;
   border-radius: 12px;
   width: 100%;
   max-width: 400px;
-  color: var(--text-muted);
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(194, 126, 121, 0.3);
+  transition: all 0.3s ease;
+}
+
+.header-search:focus-within {
+  box-shadow: 0 6px 20px rgba(194, 126, 121, 0.4);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .header-search input {
@@ -139,8 +147,13 @@
   border: none;
   outline: none;
   width: 100%;
-  font-size: 0.9rem;
-  color: var(--text-main);
+  font-size: 0.95rem;
+  color: #050000;
+  font-weight: 700;
+}
+
+.header-search input::placeholder {
+  color: #FFFFFF;
 }
 
 .header-actions {

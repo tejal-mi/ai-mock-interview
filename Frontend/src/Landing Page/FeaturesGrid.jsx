@@ -1,5 +1,5 @@
 import React from 'react';
-import './DashboardSection.css';
+import './DetailedFeatures.css';
 
 const FeaturesGrid = () => {
   const features = [

@@ -17,7 +17,14 @@ const DashboardOverview = () => {
 
       <div className="stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px', margin: '32px 0' }}>
         {stats.map((stat, index) => (
-          <div key={index} className="stat-card" style={{ background: 'var(--bg-subtle)', padding: '24px', borderRadius: '20px', border: '1px solid var(--glass-border)' }}>
+          <div key={index} className="stat-card" style={{ 
+            background: 'var(--bg-subtle)', 
+            padding: '24px', 
+            borderRadius: '20px', 
+            border: '1px solid var(--glass-border)',
+            boxShadow: 'var(--shadow)',
+            transition: 'var(--transition)'
+          }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
               <span style={{ fontSize: '2rem' }}>{stat.icon}</span>
               <span style={{ fontSize: '0.8rem', padding: '4px 8px', background: 'rgba(129, 8, 92, 0.1)', color: 'var(--primary)', borderRadius: '8px', fontWeight: '600' }}>
@@ -31,7 +38,13 @@ const DashboardOverview = () => {
       </div>
 
       <div className="overview-sections" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '24px' }}>
-        <div className="recent-activity" style={{ background: 'var(--bg-subtle)', padding: '32px', borderRadius: '24px', border: '1px solid var(--glass-border)' }}>
+        <div className="recent-activity" style={{ 
+          background: 'var(--bg-subtle)', 
+          padding: '32px', 
+          borderRadius: '24px', 
+          border: '1px solid var(--glass-border)',
+          boxShadow: 'var(--shadow)'
+        }}>
           <h2 style={{ fontSize: '1.25rem', marginBottom: '24px' }}>Recent Interviews</h2>
           <div className="activity-list">
             {[1, 2, 3].map(i => (
@@ -51,7 +64,13 @@ const DashboardOverview = () => {
           </div>
         </div>
 
-        <div className="upcoming-tasks" style={{ background: 'var(--bg-subtle)', padding: '32px', borderRadius: '24px', border: '1px solid var(--glass-border)' }}>
+        <div className="upcoming-tasks" style={{ 
+          background: 'var(--bg-subtle)', 
+          padding: '32px', 
+          borderRadius: '24px', 
+          border: '1px solid var(--glass-border)',
+          boxShadow: 'var(--shadow)'
+        }}>
           <h2 style={{ fontSize: '1.25rem', marginBottom: '24px' }}>Next Steps</h2>
           <div className="task-list" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <button style={{ width: '100%', padding: '16px', background: 'var(--primary)', color: 'white', borderRadius: '12px', fontWeight: '600' }}>

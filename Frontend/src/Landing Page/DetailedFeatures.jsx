@@ -1,7 +1,7 @@
 import React from 'react';
 import cheatingImg from '../assets/cheating_detector.png';
 import voiceImg from '../assets/voice_interaction.png';
-import './DashboardSection.css';
+import './DetailedFeatures.css';
 
 const DetailedFeatures = () => {
   return (
@@ -43,7 +43,7 @@ const DetailedFeatures = () => {
           <h3>Voice-to-Text Engine</h3>
           <p>Practice speaking your solutions aloud. Our engine transcribes your voice in real-time, allowing the AI to challenge your verbal explanations.</p>
           
-          <div className="card-viz" style={{ backgroundImage: `url(${voiceImg})`, height: '200px', borderRadius: '12px', marginTop: '20px', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="card-viz" style={{height: '200px', borderRadius: '12px', marginTop: '20px', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 
           <div className="voice-progress" style={{ marginTop: '20px' }}>
              <div className="progress-bar" style={{ height: '4px', background: 'rgba(168, 85, 247, 0.2)', borderRadius: '2px' }}>
